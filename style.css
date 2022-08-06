@@ -1,27 +1,5 @@
 /** Author: Tamim */
-@media screen and (min-width: 1366px) {
-    body {
-        background-color: #ffffff;
-    }
-    }
-    @media screen and (min-width: 1440px) {
-    body {
-        background-color: #ffffff;
-    }
-    }
-    @media screen and (min-width: 1600px) {
-        body {
-            background-color: #ffffff;
-        }
-    }
-    @media screen and (min-width: 1920px) {
-        body {
-            background-color: #ffffff;
-        }
-    }
 body{
-    width:100%;
-    height:100%;
 	overflow-x: hidden;
 	font-family: 'Courier New', Courier, monospace;
     background: #FFF;
@@ -51,7 +29,7 @@ p {
 }
 div.container{
     width:100%;
-    height:100%;
+    height:auto;
     min-width:1000px;
     height:auto;
 }
