@@ -16,7 +16,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="student.html">Student Information</a></li>
-                        <li><a href="update.html">Update Information</a></li>i>
+                        <li><a href="update.html">Update Information</a></li>
                         <li><a href="about-us.html">About AITVET</a></li>
                         <li><a href="#">Admission</a></li>
                     </ul>
@@ -43,6 +43,222 @@
                 </div>
             </div>
         </div>
+        <div class=Iqbal201>
+            <table class=IqbalTable201 border=0 cellspacing=0 cellpadding=0 width=744>
+            <tbody>                         <!--Student Information-->
+                <tr style='height:auto'>
+                    <th colspan="12"> <h1 style="text-align: center;">Admission Form</h1>
+                    </th>
+                </tr>
+                <tr style="height:22.3pt">
+                    <td width="143" colspan="3" style="width:107.25pt;">
+                        <span>Admission ID</span>
+                    </td>
+                    <td width="271" colspan="3" style="width:203.5pt;">
+                        <b><span>
+                        <input id="uid" readonly placeholder="Office Use" type="text">
+                        </span></b>
+                    </td>
+                    <td width="210" colspan="4" style="width:157.25pt;">
+                        <span>Campus:</span>
+                        <select name="campus" id="dbox" style='width:60%;'>
+                            <option value="tej">Karwan Bazar</option>
+                            <option value="ash">Ashulia</option>
+                        </select>
+                    </td>
+                    <td width="120" colspan="2" rowspan="3">
+                        <input type="file" accept="image/*" onchange="loadFile(event)">
+                        <img height="100px" id="output" />
+                        <script>
+                        var loadFile = function(event) {
+                            var output = document.getElementById('output');
+                            output.src = URL.createObjectURL(event.target.files[0]);
+                            output.onload = function() {
+                            URL.revokeObjectURL(output.src)
+                            }
+                        };
+                        </script>
+                    </td>
+                </tr>
+                <tr style='height:22.0pt'>
+                    <td width=143 colspan=3 id=td-101>
+                        <span>Session</span>
+                    </td>
+                    <td width=271 colspan=3 id=size-101>
+                    <input type="text" name="session" readonly id="session" value="2022-2023">
+                    </td>
+                    <td width=210 colspan=4 style='width:157.25pt;'>
+                        <span>Department</span>
+                        <select name="dpt" id="dbox" style='width:50%;'>
+                            <option value="Architecture">Architecture</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Computer">Computer</option>
+                            <option value="Electrical">Electrical</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Chemical">Chemical</option>
+                            <option value="Textile">Textile</option>
+                        </select>
+                        </td>
+                </tr>
+                <tr style='height:22.0pt'>
+                    <td width=143 colspan=3 id=td-101>
+                        <span>Date Of Birth </span>
+                    </td>
+                    <td width=271 colspan=3 id=size-101>
+                        <input type="date" name="dob" id="dob" placeholder="Date Of Birth">
+                    </td>
+                    <td width=210 colspan=4 style='width:157.25pt;'>
+                        <span>Section:</span>
+                        <select name="section" id="dbox" style='width:50%;'>
+                            <option value="day">Day</option>
+                            <option value="morning">Morning</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr style='height:22.0pt'>
+                    <td width=143 colspan=3 id=td-101>
+                        <span>Student Name</span>
+                    </td>
+                    <td width=271 colspan=3 id=size-101>
+                        <input type="text" name="name" id="name" placeholder="Student Name">
+                    </td>
+                    <td width=330 colspan=6 style='width:247.25pt;'>
+                    </td>
+                </tr>
+                <tr style='height:22.0pt'>
+                    <td width=143 colspan=3 id=td-101>
+                        <span>Father's Name</span>
+                    </td>
+                    <td width=271 colspan=3 id=size-101>
+                        <input type="text" name="fname" id="fname" placeholder="Father's Name">
+                    </td>
+                    <td width=137 colspan=3 id=size-103>
+                        <span>Phone Number</span>
+                    </td>
+                    <td width=193 colspan=3 style='width:144.6pt;'>
+                        <input type="tel" name="phone" id="phone" placeholder="Contact Number">
+                    </td>
+                </tr>
+                <tr style='height:22.0pt'>
+                    <td width=143 colspan=3 id=td-101>
+                        <span>Mother's Name</span>
+                    </td>
+                    <td width=271 colspan=3 id=size-101>
+                        <input type="text" name="mname" id="mname" placeholder="Mother's Name">
+                    </td>
+                    <td width=137 colspan=3 id=size-103>
+                        <span>Phone Number</span>
+                    </td>
+                    <td width=193 colspan=3 style='width:144.6pt;'>
+                        <input type="tel" name="mcall" id="mcall" placeholder="Mother's Phone">
+                    </td>
+                    </tr>
+                    <tr style='height:22.0pt'>
+                        <td width=143 colspan=3 id=td-101>
+                            <span>Guardian Name</span>
+                        </td>
+                        <td width=271 colspan=3 id=size-101>
+                            <input type="text" name="gname" id="gname" placeholder="If Need or N/A">
+                        </td>
+                        <td width=137 colspan=3 id=size-103>
+                        <span>Guardian Relation</span>
+                        </td>
+                        <td width=193 colspan=3 style='width:144.6pt;'>
+                            <input type="text" name="grel" id="grel" placeholder="If need or N/A">
+                        </td>
+                    </tr>
+                    <tr style='height:22.0pt'>
+                        <td width=143 colspan=3 id=td-101>
+                            <span>Student Phone</span>
+                        </td>
+                        <td width=271 colspan=3 id=size-101>
+                            <input type="text" name="studentphn" id="studentphn" placeholder="Student's Phone">
+                        </td>
+                        <td width=137 colspan=3 id=size-103>
+                            <span>Blood Group</span>
+                        </td>
+                        <td width=193 colspan=3 style='width:144.6pt;'>
+                            <input type="text" name="blood" id="blood" placeholder="Blood Group">
+                        </td>
+                    </tr>
+                    <tr style='height:22.0pt'>
+                        <td width=143 colspan=3 id=td-101>
+                            <span>SSC Broad Roll</span>
+                        </td>
+                        <td width=271 colspan=3 id=size-101>
+                            <input type="number" name="sscroll" id="roll" placeholder="S.S.C or Equivalent">
+                        </td>
+                        <td width=137 colspan=3 id=size-103>
+                            <span>SSC Registration No.</span>
+                        </td>
+                        <td width=193 colspan=3 style='width:144.6pt;'>
+                            <input type="number" name="sscreg" id="reg" placeholder="Registration No.">
+                        </td>
+                    </tr>
+                    <tr style='height:22.0pt'>
+                        <td width=143 colspan=3 id=td-101>
+                            <span>Board</span>
+                        </td>
+                        <td width=271 colspan=3 id=size-101>
+                            <select name="eduboard" id="dbox" style='width:65%;'>
+                                <option value="Barisal">Barisal</option>
+                                <option value="Chittagong">Chittagong</option>
+                                <option value="Comilla">Comilla</option>
+                                <option value="Dinajpur">Dinajpur</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Jessore">Jessore</option>
+                                <option value="Mymensingh">Mymensingh</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Madrasha">Madrasha</option>
+                                <option value="Technical">Technical</option>
+                            </select>
+                        </td>
+                        <td width=137 colspan=3 id=size-103>
+                            <span>SSC Depernment</span>
+                        </td>
+                        <td width=193 colspan=3 style='width:144.6pt;'>
+                            <select name="sscdpt" id="dbox" style='width:65%;'>
+                                <option value="Arts">Arts</option>
+                                <option value="Commerce_BS">Commerce/Business Studies</option>
+                                <option value="Science">Science</option>
+                                <option value="Vocational">Vocational</option>
+                                <option value="Madrasha">Madrasha</option>
+                                <option value="O Level">O Level</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr style='height:22.0pt'>
+                        <td width=143 colspan=3 id=td-101>
+                            <span>GPA</span>
+                        </td>
+                        <td width=271 colspan=3 id=size-101>
+                            <input type="text" name="sscgpa" id="gpa" placeholder="GPA out of 5">
+                        </td>
+                        <td width=137 colspan=3 id=size-103>
+                            <span>Passing Year</span>
+                        </td>
+                        <td width=193 colspan=3 style='width:144.6pt;'>
+                            <input type="year" name="sscpass" id="passing year" placeholder="Passing Year">
+                        </td>
+                    </tr>
+                    <tr style='height:22.0pt'>
+                        <td width=143 colspan=3 id=td-101>
+                        </td>
+                        <td width=271 colspan=3 id=size-101>
+                        </td>
+                        <td width=137 colspan=3 id=size-103>              
+                        </td>
+                        <td width=193 colspan=3 style='width:144.6pt;'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit" class="updatebtn" value="Submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
     <div class="develop_container">
         <div class="reserved">©2022 AITVET All Right Reserved.</div>

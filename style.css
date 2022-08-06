@@ -17,9 +17,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 	display: block;
 }
+p {
+    font-size: 1em;
+    text-align: justify;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-block-start: none;
+    margin-block-end: none;
+    margin-inline-start: none;
+    margin-inline-end: auto;   
+}
 .container{
-	width: 1200px;
-    margin: 0 auto;
+	width: auto;
+    margin: 0px;
 }
 @media print {
 	.develop_container, .top_container {
@@ -31,7 +41,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0 auto;
     width: 947px;
     height: 200px;
-	background-color: gray;
+	background-color: #59CE8F;
 	border-radius: 10px;
 }
 .top_menu {
@@ -139,7 +149,7 @@ li{
     width: 75px;
 }
 .logo_name1 {
-    font-size: 14px;
+    font-size: 20px;
     color: #000;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
@@ -158,16 +168,17 @@ li{
 }
 /**Student Information**/
 @page Iqbal201{
-	width: 1200px;
+	width: auto;
     margin: 0 auto;
 }
 div.iqbal201,{
 	{page:Iqbal201;}
 }
-table.IqbalTable201{
-	padding: 5px 0 0 0;
+table.IqbalTable201, .iqbal202{
+	padding: 5px 0 0 5px;
 	margin: 0 auto;
 	width: 947px;
+    vertical-align: middle;
 	height: auto;
 	background-color: rgb(235, 234, 234);
 	border-radius: 10px;
@@ -215,13 +226,57 @@ input{
     border-radius: 5px;
     border: none;
 }
+input[type="submit" i] {
+    background-color:#000;
+    border: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px 10px 10px 10px;
+    float: right;
+    font-size: large;
+}
+/** Admission */
+#dbox{
+    position: relative;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+    height: auto;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: var(--color-black);
+    background-clip: padding-box;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease-in-out;
+}
+#dob {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    display: inline-block;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 55%;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 15%), 3px 3px 5px 0 rgb(0 0 0 / 6%);
+    transition: none;
+}
 /**Footer*/
 .develop_container {
-    background-color: gray;
+    background-color: #59CE8F;
     border-radius: 10px;
     width: 947px;
     height: 39px;
     color: rgb(10, 10, 10);
+    vertical-align: middle;
     font-size: larger;
     font-style: bold;
     font-family: 'Courier New', Courier, monospace;
