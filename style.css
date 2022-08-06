@@ -28,7 +28,8 @@ p {
     margin-inline-end: auto;   
 }
 .container{
-	width: auto;
+    width: 100%;
+	height: auto;
     margin: 0px;
 }
 @media print {
