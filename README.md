@@ -1,7 +1,7 @@
 # school_management_system
-Akbor Ali School Management System
-Last Update 06.08.2022
+AITVET Project 01
+Last Update 01.17.2013
 HTML Previcew Available
 
 live preview link:
-https://iamtiqbal.github.io/itvet
+https://project.akbor.org/itvet
