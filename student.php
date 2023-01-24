@@ -48,43 +48,43 @@
                 <td colspan=3 >Student Name</td>
                 <td colspan=3><?php if(isset($returndata['name'])){echo $returndata['name'];} ?></td>
                 <td colspan=4></td>
-                <td colspan=2 rowspan=3></td>
+                <td colspan=2></td>
             </tr>
             <tr class=lead>
                 <td colspan=3 >Father's Name</td>
                 <td colspan=3><?php if(isset($returndata['father_name'])){echo $returndata['father_name'];} ?></td>
                 <td colspan=4>Phone Number</td>
-                <td colspan=2 rowspan=3><?php if(isset($returndata['parent_phone_1'])){echo $returndata['parent_phone_1'];} ?></td>
+                <td colspan=2><?php if(isset($returndata['parent_phone_1'])){echo $returndata['parent_phone_1'];} ?></td>
             </tr>
             <tr class=lead>
                 <td colspan=3 >Mother's Name</td>
                 <td colspan=3><?php if(isset($returndata['mother_name'])){echo $returndata['mother_name'];} ?></td>
                 <td colspan=4>Phone Number</td>
-                <td colspan=2 rowspan=3><?php if(isset($returndata['parent_phone_2'])){echo $returndata['parent_phone_2'];} ?></td>
+                <td colspan=2><?php if(isset($returndata['parent_phone_2'])){echo $returndata['parent_phone_2'];} ?></td>
             </tr>
             <tr class=lead>
                 <td colspan=3 >Guardian Name</td>
                 <td colspan=3><?php if(isset($returndata['guardian_name'])){echo $returndata['guardian_name'];} ?></td>
                 <td colspan=4>Guardian Relation</td>
-                <td colspan=2 rowspan=3><?php if(isset($returndata['guardian_rel'])){echo $returndata['guardian_rel'];} ?></td>
+                <td colspan=2><?php if(isset($returndata['guardian_rel'])){echo $returndata['guardian_rel'];} ?></td>
             </tr>
             <tr class=lead>
                 <td colspan=3 >Student Phone</td>
                 <td colspan=3><?php if(isset($returndata['std_phone'])){echo $returndata['std_phone'];} ?></td>
                 <td colspan=4>Blood Group</td>
-                <td colspan=2 rowspan=3><?php if(isset($returndata['blood_group'])){echo $returndata['blood_group'];} ?></td>
+                <td colspan=2><?php if(isset($returndata['blood_group'])){echo $returndata['blood_group'];} ?></td>
             </tr>
             <tr class=lead>
                 <td colspan=3 >SSC Board Roll</td>
                 <td colspan=3><?php if(isset($returndata['ssc_roll'])){echo $returndata['ssc_roll'];} ?></td>
                 <td colspan=4>SSC Registration No.</td>
-                <td colspan=2 rowspan=3><?php if(isset($returndata['ssc_reg'])){echo $returndata['ssc_reg'];} ?></td>
+                <td colspan=2><?php if(isset($returndata['ssc_reg'])){echo $returndata['ssc_reg'];} ?></td>
             </tr>
             <tr class=lead>
                 <td colspan=3>Guide Teacher</td>
                 <td colspan=3><?php if(isset($returndata['campus'])){echo "Shirin Akter";} ?></td>
                 <td colspan=4>Department Head</td>
-                <td colspan=2 rowspan=3><?php if(isset($returndata['campus'])){echo "Mostafizur Rahman";} ?></td>
+                <td colspan=2><?php if(isset($returndata['campus'])){echo "Mostafizur Rahman";} ?></td>
             </tr>
         </tbody>
     </table>
